@@ -1,14 +1,22 @@
+.nepali-date-picker-container {
+    position: relative;
+    display: inline;
+}
+
 .nepali__date-picker {
+    position: absolute;
+    z-index: 999999999;
+    background: white;
     --padding: 8px;
-    height: 250px;
+    height: fit-content;
     width: 200px;
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 5px;
+    max-width: 200px;
+    max-height: fit-content;
     font-size: 0.8rem;
     user-select: none;
     margin: 0;
     font-family: "Raleway", sans-serif;
+    box-shadow: 0 0 6px 0 #bdbdbdde;
 }
 
 .nepali__date-picker-current-date {
@@ -42,11 +50,11 @@
 }
 
 .nepali__date-picker-day-list {
-    padding: 0;
     margin: 0;
     display: flex;
+    padding: 0 2px;
     justify-content: space-between;
-    /* align-items: center; */
+    background: #2a2a2a;
 }
 
 .nepali__date-picker-date-list {
@@ -59,21 +67,19 @@
 
 .nepali__date-picker-day-item,
 .nepali__date-picker-date-item {
-    padding: 2px;
     text-align: center;
-    border: 1px solid #bdbdbd3a;
     width: 100%;
     list-style: none;
-    padding: 3px 5px;
+    padding: 4px 2px;
 }
 
 .nepali__date-picker-day-item {
-    background: #2a2a2a;
     color: white;
-    padding: 8px;
 }
 
 .nepali__date-picker-date-item {
+    box-sizing: border-box;
+    border: 1px solid #bdbdbd3a;
     cursor: pointer;
     transition: background 100ms ease-in-out;
 }

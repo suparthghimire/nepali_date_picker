@@ -243,7 +243,6 @@ const DATES = [
   "",
   "",
   "",
-  "",
 ];
 const INITIAL_DAY = 1;
 
@@ -306,8 +305,9 @@ const create_date_viewer = () => {
   const div = document.createElement("div");
   div.classList.add("nepali__date-picker");
   div.id = "nepali__date-picker_box";
+
   div.innerHTML = `
-    <div class="nepali__date-picker-options">
+    <div class="nepali__date-picker-options" >
         <select class="nepali__date-select-input" name="nepali__date-picker-year" id="nepali__date-picker-year">
             ${create_year_option()}
         </select>
